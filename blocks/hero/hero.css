@@ -1,6 +1,6 @@
 /* Apply Flexbox to the hero-wrapper to display children side by side */
 .hero-wrapper > .hero {
-  display: flex;
+  display: inline-flex;
   width: 100%; /* Ensures the hero takes the full width */
   justify-content: space-between; /* Ensures space is distributed between text, image, and empty space */
 }
