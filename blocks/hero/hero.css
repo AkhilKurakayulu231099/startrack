@@ -2,6 +2,7 @@
 .hero-wrapper > .hero {
   display: flex;
   width: 100%; /* Ensure the whole section takes full width */
+  justify-content: space-between; /* Ensures the content inside the hero is spread out properly */
 }
 
 /* Target the first block (Text block) */
@@ -21,13 +22,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Ensure the image doesn't overflow the container */
+  overflow: hidden; /* Prevents image overflow */
 }
 
+/* Specific styles for the <picture> and <img> elements inside the second block */
 .hero-wrapper > .hero > div:nth-child(2) picture,
 .hero-wrapper > .hero > div:nth-child(2) img {
-  width: 100%; /* Make the image take up the full width of its container */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Ensures the image inside the second div occupies the full width of the container */
+  height: auto; /* Keeps the aspect ratio of the image */
+  object-fit: cover; /* Ensures the image fills the container proportionally */
 }
 
 /* Target the third block (Empty block) */
