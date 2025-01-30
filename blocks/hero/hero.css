@@ -1,8 +1,9 @@
 /* Set up the hero-wrapper block with grid */
 .hero-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Divide the layout into 4 equal columns */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Divide into 4 equal columns */
   height: 100vh; /* Full viewport height */
+  grid-gap: 0; /* Optional: controls the gap between columns (remove space between them) */
 }
 
 /* Section for text (first column) */
@@ -24,10 +25,12 @@
 .hero-wrapper .empty-space-1 {
   grid-column: 3 / 4; /* Empty space in the third column */
   background-color: #f0f0f0; /* Optional background to visualize the empty space */
+  height: 100%; /* Full height */
 }
 
 /* Empty space in the fourth column */
 .hero-wrapper .empty-space-2 {
   grid-column: 4 / 5; /* Empty space in the fourth column */
   background-color: #e0e0e0; /* Optional background to visualize the empty space */
+  height: 100%; /* Full height */
 }
