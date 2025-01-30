@@ -1,40 +1,33 @@
 /* Apply Flexbox to the wrapper to create a horizontal layout */
 .hero-wrapper {
   display: flex; /* This will arrange child elements horizontally in a row */
-  width: 100%; /* Take full width */
+  width: 100%; /* Full width of the container */
   height: 100vh; /* Full height of the viewport */
 }
 
-/* First part (Text Block) - Take 50% of the width */
+/* First part (Text Block) - Takes 50% of the width */
 .hero-wrapper .hero {
-  flex: 0 0 50%; /* Takes up 50% of the width */
+  flex: 0 0 50%; /* 50% width for the text */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 20px; /* Optional: Adjust padding as needed */
-  text-align: center; /* Center text inside the block */
+  align-items: flex-start; /* Align text to the left */
+  padding: 20px;
+  text-align: left; /* Align text to the left */
 }
 
-/* Second part (Image Block) - Take 25% of the width */
+/* Second part (Image Block) - Takes 25% of the width */
 .hero-wrapper .hero block + div {
-  flex: 0 0 25%; /* Takes up 25% of the width */
+  flex: 0 0 25%; /* 25% width for the image */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px; /* Optional: Adjust padding as needed */
+  padding: 20px;
 }
 
-/* Third part (Empty space) - Make sure it takes no space */
+/* Third part (Empty space) - Takes 25% but remains empty */
 .hero-wrapper .hero block + div + div {
-  flex: 0 0 25%; /* Takes up 25% of the width but stays empty */
-  background-color: transparent; /* Make it transparent */
-  width: 0; /* Ensures the empty space takes no space */
-}
-
-/* Fourth part (Empty space) - Make sure it takes no space */
-.hero-wrapper .hero block + div + div + div {
-  flex: 0 0 25%; /* Takes up 25% of the width but stays empty */
-  background-color: transparent; /* Make it transparent */
-  width: 0; /* Ensures the empty space takes no space */
+  flex: 0 0 25%; /* 25% width for empty space */
+  background-color: transparent; /* Transparent background */
+  padding: 20px; /* Optional: Adjust padding */
 }
