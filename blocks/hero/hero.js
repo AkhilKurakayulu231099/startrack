@@ -1,22 +1,19 @@
-import { getMetadata } from '../../scripts/aem.js';
-import { loadFragment } from '../fragment/fragment.js';
+export default function decorate(block) {
+  // Find the hero block
+  const heroBlock = block.querySelector('.hero'); 
 
-/**
- * Decorates the hero block to make text and image side by side
- * @param {Element} block The hero block element
- */
-export default async function decorate(block) {
-  // Step 1: Identify the text and image blocks
-  const heroBlock = block.querySelector('.hero'); // Get the hero block
-  const textBlock = heroBlock.querySelector('div:first-child'); // Get the first div (text)
-  const imageBlock = heroBlock.querySelector('div:nth-child(2)'); // Get the second div (image)
-  
-  // Step 2: Add classes for styling
+  // Find the text and image blocks inside hero block
+  const textBlock = heroBlock.querySelector('div:first-child'); // Text content block
+  const imageBlock = heroBlock.querySelector('div:nth-child(2)'); // Image content block
+  const emptyBlock = heroBlock.querySelector('div:nth-child(3)'); // Empty content block
+
+  // Step 1: Add classes to each part
   textBlock.classList.add('hero-text');  // Add 'hero-text' class to the text block
   imageBlock.classList.add('hero-image'); // Add 'hero-image' class to the image block
+  emptyBlock.classList.add('hero-empty'); // Add 'hero-empty' class to the empty block
 
-  // Step 3: Apply flexbox layout (CSS will handle this)
-  heroBlock.classList.add('hero-layout');  // Add 'hero-layout' class to apply flex layout
+  // Step 2: Add flex layout to the hero block
+  heroBlock.classList.add('hero-layout'); // Apply flex layout to hero block
 
-  // Your existing code (loading footer fragment) can go here if needed
+  // Optionally, you can add any other decorations or logic here as per your requirement
 }
