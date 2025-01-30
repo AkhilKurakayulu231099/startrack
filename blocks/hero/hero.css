@@ -53,3 +53,7 @@
 .hero-wrapper > .hero > div:nth-child(3) > ul:nth-child(1) > li {
   color: green; /* Ensures the third block is hidden */
 }
+
+.hero-wrapper > .hero > div:nth-child(1) li {
+  color: green; /* Ensures the third block is hidden */
+}
