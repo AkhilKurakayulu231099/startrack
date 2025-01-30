@@ -15,5 +15,5 @@ export default function decorate(block) {
   // Step 2: Add flex layout to the hero block
   heroBlock.classList.add('hero-layout'); // Apply flex layout to hero block
 
-  // Optionally, you can add any other decorations or logic here as per your requirement
+  // Now the classes should be added properly to the elements
 }
