@@ -9,7 +9,7 @@
 .hero-wrapper > .hero > div:first-child {
   flex: 0 0 50%; /* This will take up 50% of the width */
   padding: 20px;
-  display: flex;
+  display:inline-flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
@@ -19,7 +19,7 @@
 .hero-wrapper > .hero > div:nth-child(2) {
   flex: 0 0 50%; /* This will take up the remaining 50% of the width */
   padding: 20px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Prevents image from overflowing */
