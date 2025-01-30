@@ -1,33 +1,34 @@
-/* Apply Flexbox to the wrapper to create a horizontal layout */
+/* Ensure that the parent container uses Flexbox */
 .hero-wrapper {
-  display: flex; /* This will arrange child elements horizontally in a row */
-  width: 100%; /* Full width of the container */
+  display: flex; /* Align children side by side horizontally */
+  width: 100%;   /* Full width */
   height: 100vh; /* Full height of the viewport */
 }
 
-/* First part (Text Block) - Takes 50% of the width */
+/* Text Block (takes 50% of the width) */
 .hero-wrapper .hero {
-  flex: 0 0 50%; /* 50% width for the text */
+  flex: 0 0 50%; /* 50% width for the text block */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column; /* Arrange children vertically within this block */
+  justify-content: center; /* Center the text vertically */
   align-items: flex-start; /* Align text to the left */
-  padding: 20px;
+  padding: 20px; /* Optional padding */
   text-align: left; /* Align text to the left */
 }
 
-/* Second part (Image Block) - Takes 25% of the width */
+/* Image Block (takes 25% of the width) */
 .hero-wrapper .hero block + div {
-  flex: 0 0 25%; /* 25% width for the image */
+  flex: 0 0 25%; /* 25% width for the image block */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  padding: 20px; /* Optional padding */
 }
 
-/* Third part (Empty space) - Takes 25% but remains empty */
+/* Third part - Empty Space (takes the remaining 25%) */
 .hero-wrapper .hero block + div + div {
-  flex: 0 0 25%; /* 25% width for empty space */
-  background-color: transparent; /* Transparent background */
-  padding: 20px; /* Optional: Adjust padding */
+  flex: 0 0 25%; /* 25% width for the empty block */
+  background-color: transparent; /* Make sure it's visually empty */
+  width: 0; /* Ensure it's not taking up space */
+  padding: 20px; /* Optional: adjust if necessary */
 }
