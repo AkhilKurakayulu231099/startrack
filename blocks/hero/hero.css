@@ -1,34 +1,35 @@
-/* Ensure that the parent container uses Flexbox */
+/* Apply flexbox to the parent container to make sure children are laid out horizontally */
 .hero-wrapper {
-  display: flex; /* Align children side by side horizontally */
-  width: 100%;   /* Full width */
+  display: flex !important; /* Force the layout to be horizontal */
+  width: 100% !important; /* Make the parent container take up the full width */
   height: 100vh; /* Full height of the viewport */
+  box-sizing: border-box;
 }
 
-/* Text Block (takes 50% of the width) */
+/* First part (Text Block) - Should take 50% of the width */
 .hero-wrapper .hero {
-  flex: 0 0 50%; /* 50% width for the text block */
+  flex: 0 0 50% !important; /* Ensures it takes 50% of the width */
   display: flex;
-  flex-direction: column; /* Arrange children vertically within this block */
-  justify-content: center; /* Center the text vertically */
-  align-items: flex-start; /* Align text to the left */
-  padding: 20px; /* Optional padding */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
   text-align: left; /* Align text to the left */
 }
 
-/* Image Block (takes 25% of the width) */
+/* Second part (Image Block) - Should take 25% of the width */
 .hero-wrapper .hero block + div {
-  flex: 0 0 25%; /* 25% width for the image block */
+  flex: 0 0 25% !important; /* Ensure image block takes 25% of the width */
   display: flex;
-  justify-content: center; /* Center image horizontally */
-  align-items: center; /* Center image vertically */
-  padding: 20px; /* Optional padding */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Third part - Empty Space (takes the remaining 25%) */
+/* Third part (Empty space) - Should take 25% of the width but be empty */
 .hero-wrapper .hero block + div + div {
-  flex: 0 0 25%; /* 25% width for the empty block */
-  background-color: transparent; /* Make sure it's visually empty */
-  width: 0; /* Ensure it's not taking up space */
-  padding: 20px; /* Optional: adjust if necessary */
+  flex: 0 0 25% !important; /* Take up the remaining 25% */
+  background-color: transparent; /* Make the background transparent */
+  width: 0 !important; /* Ensure it's empty visually */
+  padding: 20px;
 }
