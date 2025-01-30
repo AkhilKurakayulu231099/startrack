@@ -10,7 +10,7 @@
   width: 100%; /* Takes up 50% of the container */
   padding: 20px; 
   box-sizing: border-box;
-  border-left: 10px solid red;
+  border-left: 5px solid red;
 }
 .hero-wrapper > .hero > div:nth-child(1) img {
   width: 100%; /* Make the image fill the container */
