@@ -1,4 +1,4 @@
-/* General page layout */
+/* General layout for the page */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,41 +7,43 @@ body {
   height: 100vh; /* Full viewport height */
 }
 
-/* Section for text */
+/* Section for text (first column) */
 .hero-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-column: 1 / 2; /* Place in the first column */
+  grid-column: 1 / 2; /* Text goes in the first column */
   padding: 20px;
 }
 
-/* Section for image */
+/* Section for image (second column) */
 .hero-wrapper picture {
-  grid-column: 2 / 3; /* Place in the second column */
+  grid-column: 2 / 3; /* Image goes in the second column */
   padding: 20px;
 }
 
-/* Empty section 3 */
+/* Empty space in the third column */
 body::before {
   content: "";
   grid-column: 3 / 4; /* Empty space in the third column */
+  background-color: #f0f0f0; /* Optional background to visualize the empty space */
 }
 
-/* Empty section 4 */
+/* Empty space in the fourth column */
 body::after {
   content: "";
   grid-column: 4 / 5; /* Empty space in the fourth column */
+  background-color: #e0e0e0; /* Optional background to visualize the empty space */
 }
 
-/* Optional: Adjusting the size of the text */
+/* Optional: Centering text */
 h1 {
   font-size: 2em;
   text-align: center;
   margin: 0;
 }
 
-/* Optional: Image size */
+/* Optional: Image styling */
 img {
   width: 100%;
   height: auto;
