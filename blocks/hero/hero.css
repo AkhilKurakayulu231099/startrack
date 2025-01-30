@@ -1,7 +1,4 @@
 /* Apply flex to the hero-wrapper to align the content side by side */
-.hero-wrapper{
-    height: 200px;
-}
 
 .hero-wrapper > .hero > div {
   display: flex;
@@ -29,7 +26,7 @@
 .hero-wrapper > .hero > div:nth-child(2) picture,
 .hero-wrapper > .hero > div:nth-child(2) img {
   width: 100%; /* Make the image fill the container */
-  /*height: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Cover the container without distortion */
 }
 
