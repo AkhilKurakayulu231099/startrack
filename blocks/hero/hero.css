@@ -1,37 +1,49 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
+/* General page layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 equal columns */
+  height: 100vh; /* Full viewport height */
 }
 
-.hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+/* Section for text */
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 2; /* Place in the first column */
+  padding: 20px;
 }
 
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+/* Section for image */
+.hero-wrapper picture {
+  grid-column: 2 / 3; /* Place in the second column */
+  padding: 20px;
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+/* Empty section 3 */
+body::before {
+  content: "";
+  grid-column: 3 / 4; /* Empty space in the third column */
 }
 
-.hero img {
-  object-fit: cover;
+/* Empty section 4 */
+body::after {
+  content: "";
+  grid-column: 4 / 5; /* Empty space in the fourth column */
+}
+
+/* Optional: Adjusting the size of the text */
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+/* Optional: Image size */
+img {
   width: 100%;
-  height: 100%;
-}
-
-@media (width >= 900px) {
-  .hero {
-    padding: 40px 32px;
-  }
+  height: auto;
+  display: block;
 }
