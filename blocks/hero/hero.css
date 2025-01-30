@@ -1,13 +1,13 @@
 /* Set up the hero-wrapper to display in a row */
 .hero-wrapper {
-  display: flex;
-  width: 100%; /* Take up full width */
+  display: grid;
+  grid-template-columns: 1fr 1fr 0 0; /* First two columns for text and image, others are empty */
   height: 100vh; /* Full viewport height */
 }
 
 /* Section for text (first part) */
 .hero-wrapper .hero {
-  flex: 1; /* Take up 1 part of the space */
+  grid-column: 1 / 2; /* Text goes in the first column */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,20 +17,18 @@
 
 /* Section for image (second part) */
 .hero-wrapper picture {
-  flex: 1; /* Take up 1 part of the space */
+  grid-column: 2 / 3; /* Image goes in the second column */
   padding: 20px;
 }
 
-/* Empty space for the third part */
+/* Empty space for the third part (you can remove this if you don't want anything to show) */
 .hero-wrapper .empty-space-1 {
-  flex: 1; /* Take up 1 part of the space */
-  background-color: #f0f0f0; /* Optional background to visualize the empty space */
-  height: 100%; /* Full height */
+  grid-column: 3 / 4; /* This column is empty */
+  background-color: transparent; /* Optional: just to visualize it's empty */
 }
 
 /* Empty space for the fourth part */
 .hero-wrapper .empty-space-2 {
-  flex: 1; /* Take up 1 part of the space */
-  background-color: #e0e0e0; /* Optional background to visualize the empty space */
-  height: 100%; /* Full height */
+  grid-column: 4 / 5; /* This column is empty */
+  background-color: transparent; /* Optional: just to visualize it's empty */
 }
