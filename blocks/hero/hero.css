@@ -1,13 +1,13 @@
-/* Apply Flexbox to the hero-wrapper to make sections side-by-side */
+/* Apply Flexbox to the hero block to make sections side-by-side */
 .hero-layout {
   display: flex;
-  width: 100%;        /* Ensure the hero wrapper takes full width */
-  height: 100vh;      /* Set the height to fill the viewport */
+  width: 100%;
+  height: 100vh;
 }
 
 /* Text Block (First div) - takes 50% width */
 .hero-text {
-  flex: 0 0 50%;      /* Occupies 50% width */
+  flex: 0 0 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,7 +18,7 @@
 
 /* Image Block (Second div) - takes 25% width */
 .hero-image {
-  flex: 0 0 25%;      /* Occupies 25% width */
+  flex: 0 0 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,6 @@
 
 /* Empty Block (Third div) - takes 25% width, no content */
 .hero-empty {
-  flex: 0 0 25%;      /* Occupies remaining 25% width */
-  background-color: transparent; /* Make sure this block remains empty */
+  flex: 0 0 25%;
+  background-color: transparent;
 }
