@@ -11,6 +11,11 @@
   padding: 20px; 
   box-sizing: border-box;
 }
+.hero-wrapper > .hero > div:nth-child(1) picture {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
 
 /* Second div - Image section */
 .hero-wrapper > .hero > div:nth-child(2) {
