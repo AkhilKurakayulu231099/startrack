@@ -1,19 +1,40 @@
-export default function decorate(block) {
-  // Find the hero block
-  const heroBlock = block.querySelector('.hero'); 
+export default async function decorate(block) {
+  // Ensure the block is loaded before making changes
+  const heroBlock = block.querySelector('.hero');
+  
+  if (!heroBlock) {
+    console.log('Hero block not found.');
+    return;
+  }
 
-  // Find the text and image blocks inside hero block
-  const textBlock = heroBlock.querySelector('div:first-child'); // Text content block
-  const imageBlock = heroBlock.querySelector('div:nth-child(2)'); // Image content block
-  const emptyBlock = heroBlock.querySelector('div:nth-child(3)'); // Empty content block
+  // Find the child divs (text, image, empty) inside the .hero block
+  const childDivs = heroBlock.querySelectorAll('div');
 
-  // Step 1: Add classes to each part
-  textBlock.classList.add('hero-text');  // Add 'hero-text' class to the text block
-  imageBlock.classList.add('hero-image'); // Add 'hero-image' class to the image block
-  emptyBlock.classList.add('hero-empty'); // Add 'hero-empty' class to the empty block
+  if (childDivs.length < 3) {
+    console.log('Expected 3 child divs, but found:', childDivs.length);
+    return;
+  }
 
-  // Step 2: Add flex layout to the hero block
-  heroBlock.classList.add('hero-layout'); // Apply flex layout to hero block
+  // Step 1: Add specific classes to each part
+  const textBlock = childDivs[0];  // First div (Text block)
+  const imageBlock = childDivs[1]; // Second div (Image block)
+  const emptyBlock = childDivs[2]; // Third div (Empty block)
 
-  // Now the classes should be added properly to the elements
+  // Add classes for styling
+  textBlock.classList.add('hero-text');  
+  imageBlock.classList.add('hero-image'); 
+  emptyBlock.classList.add('hero-empty');
+
+  // Step 2: Apply Flex layout to the hero block
+  heroBlock.classList.add('hero-layout'); 
+
+  // Log to ensure classes are added
+  console.log('Classes added:', {
+    textBlock: textBlock.className,
+    imageBlock: imageBlock.className,
+    emptyBlock: emptyBlock.className,
+    heroBlock: heroBlock.className
+  });
+
+  // Additional logic (optional) can be added here if needed.
 }
