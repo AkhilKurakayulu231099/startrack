@@ -1,1 +1,40 @@
+/* Apply Flexbox to the wrapper to create a horizontal layout */
+.hero-wrapper {
+  display: flex; /* This will arrange child elements horizontally in a row */
+  width: 100%; /* Take full width */
+  height: 100vh; /* Full height of the viewport */
+}
 
+/* First part (Text Block) */
+.hero-wrapper .hero {
+  flex: 1; /* Takes up 1/4 of the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Optional: Adjust padding as needed */
+  text-align: center; /* Center text inside the block */
+}
+
+/* Second part (Image Block) */
+.hero-wrapper .hero block + div {
+  flex: 1; /* Takes up 1/4 of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Optional: Adjust padding as needed */
+}
+
+/* Third part (Empty space) - Set flex: 0 so it doesn't take space */
+.hero-wrapper .hero block + div + div {
+  flex: 0; /* Don't take any width, essentially empty */
+  background-color: transparent; /* Make it transparent */
+  width: 0; /* Ensures the empty space takes no space */
+}
+
+/* Fourth part (Empty space) - Set flex: 0 so it doesn't take space */
+.hero-wrapper .hero block + div + div + div {
+  flex: 0; /* Don't take any width, essentially empty */
+  background-color: transparent; /* Make it transparent */
+  width: 0; /* Ensures the empty space takes no space */
+}
