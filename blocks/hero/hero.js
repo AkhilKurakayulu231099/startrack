@@ -2,19 +2,19 @@ export default async function decorate(block) {
   // Log the block to ensure we're working with the correct one
   console.log('Block:', block);
 
-  // Find the first 'hero-wrapper' block within the passed block
-  const heroWrapper = block.querySelector('.hero-wrapper');  // Correctly targeting the 'hero-wrapper'
+  // Find the 'hero' block directly, as the 'hero-wrapper' does not exist
+  const heroBlock = block.querySelector('.hero');
 
-  if (!heroWrapper) {
-    console.log('Hero wrapper block not found.');
+  if (!heroBlock) {
+    console.log('Hero block not found.');
     return;
   }
 
-  // Log the hero wrapper to inspect its structure
-  console.log('Hero wrapper found:', heroWrapper);
+  // Log the hero block to inspect its structure
+  console.log('Hero block found:', heroBlock);
 
-  // Get the first three child divs inside the hero-wrapper block
-  const childDivs = heroWrapper.querySelectorAll('div');
+  // Get the first div inside the hero block (which contains the three sections)
+  const childDivs = heroBlock.querySelectorAll('div > div');
 
   if (childDivs.length < 3) {
     console.log('Expected 3 child divs, but found:', childDivs.length);
@@ -31,14 +31,14 @@ export default async function decorate(block) {
   imageBlock.classList.add('hero-image');
   emptyBlock1.classList.add('hero-empty');
 
-  // Apply the flex layout to the hero wrapper
-  heroWrapper.classList.add('hero-layout');
+  // Apply the flex layout to the hero block
+  heroBlock.classList.add('hero-layout');
 
   // Log to verify that the correct classes are added
   console.log('Classes added:', {
     textBlock: textBlock.className,
     imageBlock: imageBlock.className,
     emptyBlock1: emptyBlock1.className,
-    heroWrapper: heroWrapper.className
+    heroBlock: heroBlock.className
   });
 }
