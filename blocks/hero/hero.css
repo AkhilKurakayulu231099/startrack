@@ -1,35 +1,33 @@
-/* Apply flexbox to the parent container to make sure children are laid out horizontally */
-.hero-wrapper {
-  display: flex !important; /* Force the layout to be horizontal */
-  width: 100% !important; /* Make the parent container take up the full width */
+/* Apply flexbox specifically to the .hero block */
+.hero-wrapper .hero {
+  display: flex !important;  /* Ensure only this block is a flex container */
+  width: 100%;  /* Full width */
   height: 100vh; /* Full height of the viewport */
-  box-sizing: border-box;
 }
 
-/* First part (Text Block) - Should take 50% of the width */
-.hero-wrapper .hero {
-  flex: 0 0 50% !important; /* Ensures it takes 50% of the width */
+/* Text Block - takes 50% of the width */
+.hero-wrapper .hero > div:first-child {
+  flex: 0 0 50% !important;  /* Ensures it takes 50% of the width */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-  text-align: left; /* Align text to the left */
+  text-align: left;  /* Align text to the left */
 }
 
-/* Second part (Image Block) - Should take 25% of the width */
-.hero-wrapper .hero block + div {
-  flex: 0 0 25% !important; /* Ensure image block takes 25% of the width */
+/* Image Block - takes 25% of the width */
+.hero-wrapper .hero > div:nth-child(2) {
+  flex: 0 0 25% !important;  /* Ensures it takes 25% of the width */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-/* Third part (Empty space) - Should take 25% of the width but be empty */
-.hero-wrapper .hero block + div + div {
-  flex: 0 0 25% !important; /* Take up the remaining 25% */
-  background-color: transparent; /* Make the background transparent */
-  width: 0 !important; /* Ensure it's empty visually */
-  padding: 20px;
+/* Empty Block - takes 25% of the width */
+.hero-wrapper .hero > div:nth-child(3) {
+  flex: 0 0 25% !important;  /* Ensures it takes 25% of the width */
+  background-color: transparent; /* Empty space with transparent background */
+  padding: 20px; /* Optional: Add padding if needed */
 }
