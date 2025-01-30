@@ -1,4 +1,8 @@
 /* Apply flex to the hero-wrapper to align the content side by side */
+.hero-wrapper{
+    height: 200px;
+}
+
 .hero-wrapper > .hero > div {
   display: flex;
   flex-direction: row; /* Ensure the children are aligned in a row */
