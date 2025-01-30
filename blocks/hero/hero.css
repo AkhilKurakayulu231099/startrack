@@ -1,40 +1,40 @@
-/* Apply Flexbox to the hero-wrapper to display children side by side */
+/* Apply Flexbox to hero-wrapper to arrange its children side by side */
 .hero-wrapper > .hero {
-  display: inline-flex;
-  /*width: 100%; /* Ensures the hero takes the full width */
-  justify-content: space-between; /* Ensures space is distributed between text, image, and empty space */
+  display: flex;
+  justify-content: space-between; /* Distribute space between text and image */
+  width: 100%; /* Make sure the container takes the full width */
 }
 
-/* Target the first block (Text block) */
+/* First block containing the text */
 .hero-wrapper > .hero > div:first-child {
-  flex: 0 0 50%; /* This will take up 50% of the width */
+  flex: 1; /* This will take up as much space as needed */
   padding: 20px;
-  display:inline-flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: left;
+  justify-content: center; /* Centers the text vertically */
+  text-align: left; /* Aligns the text to the left */
 }
 
-/* Target the second block (Image block) */
+/* Second block containing the image */
 .hero-wrapper > .hero > div:nth-child(2) {
-  flex: 0 0 50%; /* This will take up the remaining 50% of the width */
+  flex: 1; /* This will take up the remaining space */
   padding: 20px;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Prevents image from overflowing */
 }
 
-/* Apply 100% width to the image so it fills its container */
+/* Ensure the image inside the <picture> element takes the full width */
 .hero-wrapper > .hero > div:nth-child(2) picture,
 .hero-wrapper > .hero > div:nth-child(2) img {
-  width: 100%; /* Ensures the image takes up full width of its container */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: cover; /* Ensures the image covers the container without stretching */
+  width: 100% !important; /* Ensure the image takes the full width */
+  height: auto !important; /* Maintain aspect ratio */
+  object-fit: cover !important; /* Cover the area of the container without stretching */
 }
 
-/* Target the third block (Empty block) */
+/* Empty third block, which we will leave empty as per your request */
 .hero-wrapper > .hero > div:nth-child(3) {
-  flex: 0 0 0%; /* This will leave the third block empty */
+  flex: 0 0 0%; /* This ensures the third block doesn't take up any space */
   padding: 20px;
 }
