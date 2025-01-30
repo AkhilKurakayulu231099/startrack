@@ -1,13 +1,13 @@
-/* Apply Flexbox to the hero wrapper to display children side-by-side */
+/* Apply Flexbox to the hero-wrapper to display children side by side */
 .hero-wrapper > .hero {
   display: flex;
-  width: 100%; /* Ensure the whole section takes full width */
-  justify-content: space-between; /* Ensures the content inside the hero is spread out properly */
+  width: 100%; /* Ensures the hero takes the full width */
+  justify-content: space-between; /* Ensures space is distributed between text, image, and empty space */
 }
 
 /* Target the first block (Text block) */
 .hero-wrapper > .hero > div:first-child {
-  flex: 0 0 50%; /* This will take 50% of the width */
+  flex: 0 0 50%; /* This will take up 50% of the width */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -17,24 +17,24 @@
 
 /* Target the second block (Image block) */
 .hero-wrapper > .hero > div:nth-child(2) {
-  flex: 0 0 25%; /* This will take 25% of the width */
+  flex: 0 0 50%; /* This will take up the remaining 50% of the width */
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Prevents image overflow */
+  overflow: hidden; /* Prevents image from overflowing */
 }
 
-/* Specific styles for the <picture> and <img> elements inside the second block */
+/* Apply 100% width to the image so it fills its container */
 .hero-wrapper > .hero > div:nth-child(2) picture,
 .hero-wrapper > .hero > div:nth-child(2) img {
-  width: 100%; /* Ensures the image inside the second div occupies the full width of the container */
-  height: auto; /* Keeps the aspect ratio of the image */
-  object-fit: cover; /* Ensures the image fills the container proportionally */
+  width: 100%; /* Ensures the image takes up full width of its container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container without stretching */
 }
 
 /* Target the third block (Empty block) */
 .hero-wrapper > .hero > div:nth-child(3) {
-  flex: 0 0 25%; /* This will take the remaining 25% */
+  flex: 0 0 0%; /* This will leave the third block empty */
   padding: 20px;
 }
