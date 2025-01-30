@@ -15,7 +15,7 @@
 }
 
 /* Target the second block (Image block) */
-.hero-wrapper > .hero > div:nth-child(2) {
+.hero-wrapper img{
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
