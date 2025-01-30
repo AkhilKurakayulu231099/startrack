@@ -3,7 +3,7 @@ export default async function decorate(block) {
   console.log('Block:', block);
 
   // Find the 'hero' block directly, as the 'hero-wrapper' does not exist
-  const heroBlock = block.querySelector('.hero');
+  const heroBlock = block.querySelector('.hero block');
 
   if (!heroBlock) {
     console.log('Hero block not found.');
