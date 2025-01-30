@@ -55,5 +55,6 @@
 }
 
 .hero-wrapper > .hero > div:nth-child(1) li {
-  color: green; /* Ensures the third block is hidden */
+  color: green;
+  text-decoration: none;
 }
