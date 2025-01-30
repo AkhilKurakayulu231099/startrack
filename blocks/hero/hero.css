@@ -21,7 +21,7 @@
   width: 10px; /* Set the width of the red line */
   height: auto; /* Adjust height based on content */
   min-height: 200px; /* Make sure the line spans at least the height of the heading and paragraph */
-  border-left: 5px solid red; /* Red line */
+  border-left: 3px solid #dc1928; /* Red line */
 }
 
 /* Ensure the image inside the first div scales properly */
