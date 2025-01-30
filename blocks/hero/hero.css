@@ -50,6 +50,6 @@
 }
 
 /* Empty third div - It should take up no space */
-.hero-wrapper > .hero > div:nth-child(3) {
-  display: none; /* Ensures the third block is hidden */
+.hero-wrapper > .hero > div:nth-child(3) > ul:nth-child(1) > li {
+  color: green; /* Ensures the third block is hidden */
 }
