@@ -6,7 +6,7 @@
 
 /* First div - Text section */
 .hero-wrapper > .hero > div:nth-child(1) {
-  width: 50%; /* Takes up 50% of the container */
+  width: 100%; /* Takes up 50% of the container */
   padding: 20px; 
   box-sizing: border-box;
 }
