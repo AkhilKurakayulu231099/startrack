@@ -62,6 +62,7 @@
 .hero-wrapper > .hero > div > div:nth-child(3) {
   padding-left: 35px;
   list-style: none;
+  display: inline-flex;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) li {
