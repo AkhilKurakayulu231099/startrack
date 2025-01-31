@@ -1,12 +1,12 @@
 /* Apply flex to the hero-wrapper to align the content side by side */
-.freighthome-wrapper > .freighthome > div {
+.freighthero-wrapper > .freighthero > div {
   display: flex;
   flex-direction: row; /* Ensure the children are aligned in a row */
   height: 520px
 }
  
 /* First div - Text section */
-.freighthome-wrapper > .freighthome > div > div:nth-child(1) {
+.freighthero-wrapper > .freighthero > div > div:nth-child(1) {
   width: 25%; /* Takes up 50% of the container */
   padding: 20px;
   box-sizing: border-box;
@@ -16,7 +16,7 @@
   padding-right: 3.5%;
 }
  
-.freighthome-wrapper > .freighthome > div > div:nth-child(1) h1 {
+.freighthero-wrapper > .freighthero > div > div:nth-child(1) h1 {
     color: rgb(0, 51, 89);
     padding-right: 24px;
     padding-bottom: 16px;
@@ -24,7 +24,7 @@
 }
  
 /* Red vertical line before the text (heading and paragraph) */
-.freighthome-wrapper > .freighthome > div > div:nth-child(1)::before {
+.freighthero-wrapper > .freighthero > div > div:nth-child(1)::before {
   content: ""; /* Empty content */
   position: absolute;
   left: 20px;
@@ -36,14 +36,14 @@
 }
  
 /* Ensure the image inside the first div scales properly */
-.freighthome-wrapper > .freighthome > div > div:nth-child(2) img {
+.freighthero-wrapper > .freighthero > div > div:nth-child(2) img {
   width: 100%; /* Make the image fill the container */
   height: 520px; /* Maintain aspect ratio */
   object-fit: cover;
 }
  
 /* Second div - Image section */
-.freighthome-wrapper > .freighthome > div > div:nth-child(2) {
+.freighthero-wrapper > .freighthero > div > div:nth-child(2) {
   width: 25%; /* Takes up the other 50% of the container */
   box-sizing: border-box;
   display: flex;
@@ -52,19 +52,19 @@
 }
  
 /* Ensure the image inside the picture tag scales properly */
-.freighthome-wrapper > .freighthome > div:nth-child(2) picture,
-.freighthome-wrapper > .freighthome > div:nth-child(2) img {
+.freighthero-wrapper > .freighthero > div:nth-child(2) picture,
+.freighthero-wrapper > .freighthero > div:nth-child(2) img {
   width: 100%; /* Make the image fill the container */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Cover the container without distortion */
 }
  
-.freighthome-wrapper > .freighthome > div > div:nth-child(3) {
+.freighthero-wrapper > .freighthero > div > div:nth-child(3) {
   padding-left: 35px;
   list-style: none;
 }
 
-.freighthome-wrapper > .freighthome > div > div:nth-child(3) img {
+.freighthero-wrapper > .freighthero > div > div:nth-child(3) img {
     display: block;
     height: 60px;
     width: 60px;
@@ -75,7 +75,7 @@
     padding-left: 750px;
 }
 
-.freighthome-wrapper > .freighthome > div > div:nth-child(3) a{
+.freighthero-wrapper > .freighthero > div > div:nth-child(3) a{
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -84,11 +84,11 @@
     text-decoration: none;
     position: relative;
 }
-.freighthome-wrapper > .freighthome > div > div:nth-child(3) strong{
+.freighthero-wrapper > .freighthero > div > div:nth-child(3) strong{
     color: #003359;
 }
  
-.freighthome-wrapper > .hero > div > div:nth-child(3) li {
+.freighthero-wrapper > .hero > div > div:nth-child(3) li {
   list-style: none;
   border-bottom: 1.5px solid #e2e2e2;
   padding: 8px 0px 30px;
