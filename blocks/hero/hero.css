@@ -6,7 +6,7 @@
 
 /* First div - Text section */
 .hero-wrapper > .hero > div > div > div > div:nth-child(1) {
-  width: 100%; /* Takes up 50% of the container */
+  width: 50%; /* Takes up 50% of the container */
   padding: 20px;
   box-sizing: border-box;
   position: relative; /* Allow absolute positioning of the red line */
