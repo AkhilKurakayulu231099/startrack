@@ -6,14 +6,14 @@
 
 /* First div - Text section */
 .hero-wrapper > .hero > div > div:nth-child(1) {
-  width: 50%; /* Takes up 50% of the container */
+  width: 25%; /* Takes up 50% of the container */
   padding: 20px;
   box-sizing: border-box;
   position: relative; /* Allow absolute positioning of the red line */
 }
 
 /* Red vertical line before the text (heading and paragraph) */
-.hero-wrapper > .hero > div:nth-child(1)::before {
+.hero-wrapper > .hero > div > div:nth-child(1)::before {
   content: ""; /* Empty content */
   position: absolute;
   left: 0; /* Align to the left */
@@ -25,15 +25,15 @@
 }
 
 /* Ensure the image inside the first div scales properly */
-.hero-wrapper > .hero > div:nth-child(1) img {
+.hero-wrapper > .hero > div > div:nth-child(1) img {
   width: 100%; /* Make the image fill the container */
   height: 550px; /* Maintain aspect ratio */
   object-fit: cover;
 }
 
 /* Second div - Image section */
-.hero-wrapper > .hero > div:nth-child(2) {
-  width: 50%; /* Takes up the other 50% of the container */
+.hero-wrapper > .hero > div > div:nth-child(2) {
+  width: 25%; /* Takes up the other 50% of the container */
   padding: 20px;
   box-sizing: border-box;
   display: flex;
