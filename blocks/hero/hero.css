@@ -76,7 +76,6 @@
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) a{
-    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
