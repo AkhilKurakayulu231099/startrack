@@ -60,7 +60,8 @@
 
 
 
-.hero-wrapper > .hero > div > div:nth-child(3) li {
-  color: green;
+.hero-wrapper > .hero > div > div:nth-child(3) {
+  padding-left: 7%;
+  padding-right: 24px;
   text-decoration: none;
 }
