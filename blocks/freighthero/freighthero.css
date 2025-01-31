@@ -44,7 +44,7 @@
  
 /* Second div - Image section */
 .freighthero-wrapper > .freighthero > div > div:nth-child(2) {
-  width: 25%; /* Takes up the other 50% of the container */
+  width: 50%; /* Takes up the other 50% of the container */
   box-sizing: border-box;
   display: flex;
   justify-content: center;
