@@ -74,13 +74,14 @@
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) a {
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding-left: 5.0625em;
-  font-weight: 400;
-  text-decoration: none;
-  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 5.0625em;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) a {
