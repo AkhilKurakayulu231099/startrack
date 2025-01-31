@@ -70,8 +70,9 @@
   border-bottom: 1px solid #e2e2e2;
   display: flex;
 }
-.hero-wrapper > .hero > div > div:nth-child(3) a {
+.hero-wrapper > .hero > div > div:nth-child(3) strong {
   list-style: none;
+  padding: 10px;
   
 }
  
