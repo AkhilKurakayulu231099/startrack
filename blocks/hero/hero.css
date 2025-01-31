@@ -58,7 +58,7 @@
   object-fit: cover; /* Cover the container without distortion */
 }
 
-.hero-wrapper > .hero > div > div:nth-child(3) ul {
+.hero-wrapper > .hero > div > div:nth-child(3) {
   padding-left: 35px;
   text-decoration: none !important;
 }
