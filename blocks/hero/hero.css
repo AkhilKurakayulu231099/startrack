@@ -81,7 +81,7 @@
   position: relative;
 }
 
-.hero-wrapper > .hero > div > div:nth-child(3) strong {
+.hero-wrapper > .hero > div > div:nth-child(3) li > a:first-of-type > strong {
   color: #003359; /* Dark blue color */
   font-weight: bold; /* Make the text bold */
 }
