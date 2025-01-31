@@ -36,8 +36,8 @@
 }
  
 /* Ensure the image inside the first div scales properly */
-.freighthero-wrapper > .freighthero > div > div:nth-child(2) img {
-  width: 100%; /* Make the image fill the container */
+.freighthero-wrapper > .freighthero > div > div:nth-child(2)  {
+  width: 50%; /* Make the image fill the container */
   height: 520px; /* Maintain aspect ratio */
   object-fit: cover;
 }
