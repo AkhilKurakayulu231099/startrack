@@ -65,14 +65,13 @@
   display: inline-flex;
 }
  
-.hero-wrapper > .hero > div > div:nth-child(3) li {
+.hero-wrapper > .hero > div > div:nth-child(3) img a {
   list-style: none;
   border-bottom: 1px solid #e2e2e2;
   display: flex;
 }
 .hero-wrapper > .hero > div > div:nth-child(3) strong {
   list-style: none;
-  padding: 10px;
   
 }
  
