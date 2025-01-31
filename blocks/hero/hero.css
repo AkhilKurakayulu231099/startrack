@@ -65,7 +65,7 @@
   display: inline-flex;
 }
  
-.hero-wrapper > .hero > div > div:nth-child(3) img a {
+.hero-wrapper > .hero > div > div:nth-child(3) {
   list-style: none;
   border-bottom: 1px solid #e2e2e2;
   display: flex;
@@ -74,8 +74,3 @@
   list-style: none;
   
 }
- 
-.hero-wrapper > .hero > div > div:nth-child(3) p {
-  border-bottom: 3px solid #e2e2e2;
-}
-has context menu
