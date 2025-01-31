@@ -64,7 +64,7 @@
   list-style: none;
 }
 
-.hero-wrapper > .hero > div > div:nth-child(3) picture {
+.hero-wrapper > .hero > div > div:nth-child(3) img {
     display: block;
     height: 60px;
     width: 60px;
