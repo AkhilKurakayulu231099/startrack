@@ -25,14 +25,14 @@
  
 /* Red vertical line before the text (heading and paragraph) */
 .freighthero-wrapper > .freighthero > div > div:nth-child(1)::before {
-  content: ""; /* Empty content */
-  position: absolute;
-  left: 20px;
-  top: 35px;
-  width: 10px;
-  height: auto;
-  min-height: 350px; /* Make sure the line spans at least the height of the heading and paragraph */
-  border-left: 3px solid #dc1928; /* Red line */
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    width: 10px;
+    height: auto;
+    min-height: 45px;
+    border-left: 3px solid #dc1928; /* Red line */
 }
  
 /* Ensure the image inside the first div scales properly */
