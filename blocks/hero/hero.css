@@ -21,6 +21,7 @@
   padding-right: 24px;
   padding-bottom: 16px;
   margin: 0px 0px 8px;
+  font-family: APTypeProDisplay, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(1)::before {
