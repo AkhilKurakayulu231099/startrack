@@ -2,7 +2,7 @@
 .hero-wrapper > .hero > div {
   display: flex;
   flex-direction: row; /* Ensure the children are aligned in a row */
-  height: 350px
+  height: 520px
 }
 
 /* First div - Text section */
@@ -38,7 +38,7 @@
 /* Ensure the image inside the first div scales properly */
 .hero-wrapper > .hero > div > div:nth-child(2) img {
   width: 100%; /* Make the image fill the container */
-  height: 350px; /* Maintain aspect ratio */
+  height: 520px; /* Maintain aspect ratio */
   object-fit: cover;
 }
 
