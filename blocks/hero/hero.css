@@ -72,6 +72,7 @@
     left: 0;
     max-width: 3.375em;
     color: transparent;
+    padding-left: 750px;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) a{
