@@ -8,7 +8,7 @@
 /* First div - Text section */
 .freighthero-wrapper > .freighthero > div > div:nth-child(1) {
   width: 50%; /* Takes up 50% of the container */
-  padding: 20px;
+  padding: 80px;
   box-sizing: border-box;
   position: relative; /* Allow absolute positioning of the red line */
   background-color: #f5f5f5;
@@ -27,11 +27,11 @@
 .freighthero-wrapper > .freighthero > div > div:nth-child(1)::before {
     content: "";
     position: absolute;
-    left: 20px;
-    top: 30px;
+    left: 25px;
+    top: 90px;
     width: 10px;
     height: auto;
-    min-height: 45px;
+    min-height: 40px;
     border-left: 3px solid #dc1928; /* Red line */
 }
  
