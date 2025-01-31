@@ -62,9 +62,19 @@
 .hero-wrapper > .hero > div > div:nth-child(3) {
   padding-left: 35px;
   list-style: none;
-  display: inline-flex;
 }
-.hero-wrapper > .hero > div > div:nth-child(3) strong{
+
+.hero-wrapper > .hero > div > div:nth-child(3) picture {
+    display: block;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    max-width: 3.375em;
+    color: transparent;
+}
+
+.hero-wrapper > .hero > div > div:nth-child(3) a{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +88,6 @@
 .hero-wrapper > .hero > div > div:nth-child(3) li {
   list-style: none;
   border-bottom: 1px solid #e2e2e2;
-  display: flex;
 }
  
 .hero-wrapper > .hero > div > div:nth-child(3) p {
