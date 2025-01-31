@@ -69,8 +69,9 @@
   padding: 8px 0px 30px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* Align the items at the top */
   cursor: pointer;
+  flex-direction: column; /* Stack the content vertically */
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) li a {
@@ -86,6 +87,7 @@
   font-size: 24px;
   color: #003359;
   margin-left: 10px;
+  align-self: flex-end; /* Align the arrow to the end of the li */
 }
 
 /* Styling for the list image */
@@ -100,7 +102,8 @@
 .hero-wrapper > .hero > div > div:nth-child(3) a {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align items to the left */
+  margin-bottom: 5px; /* Add spacing between the two links */
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) strong {
