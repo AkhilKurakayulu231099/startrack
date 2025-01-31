@@ -2,7 +2,7 @@
 .freighthero-wrapper > .freighthero > div {
   display: flex;
   flex-direction: row; /* Ensure the children are aligned in a row */
-  height: 4000px
+  height: 400px
 }
  
 /* First div - Text section */
