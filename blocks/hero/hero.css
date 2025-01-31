@@ -1,95 +1,140 @@
 /* Apply flex to the hero-wrapper to align the content side by side */
 .hero-wrapper > .hero > div {
   display: flex;
-  flex-direction: row; /* Ensure the children are aligned in a row */
-  height: 520px
+  flex-direction: row;
+  height: 520px;
 }
- 
+
 /* First div - Text section */
 .hero-wrapper > .hero > div > div:nth-child(1) {
-  width: 25%; /* Takes up 50% of the container */
+  width: 25%;
   padding: 20px;
   box-sizing: border-box;
-  position: relative; /* Allow absolute positioning of the red line */
+  position: relative;
   background-color: #f5f5f5;
   padding-left: 45px;
   padding-right: 3.5%;
 }
- 
+
 .hero-wrapper > .hero > div > div:nth-child(1) h1 {
-    color: rgb(0, 51, 89);
-    padding-right: 24px;
-    padding-bottom: 16px;
-    margin: 0px 0px 8px;
+  color: rgb(0, 51, 89);
+  padding-right: 24px;
+  padding-bottom: 16px;
+  margin: 0px 0px 8px;
 }
- 
-/* Red vertical line before the text (heading and paragraph) */
+
 .hero-wrapper > .hero > div > div:nth-child(1)::before {
-  content: ""; /* Empty content */
+  content: "";
   position: absolute;
   left: 20px;
   top: 35px;
   width: 10px;
   height: auto;
-  min-height: 350px; /* Make sure the line spans at least the height of the heading and paragraph */
-  border-left: 3px solid #dc1928; /* Red line */
+  min-height: 350px;
+  border-left: 3px solid #dc1928;
 }
- 
-/* Ensure the image inside the first div scales properly */
+
 .hero-wrapper > .hero > div > div:nth-child(2) img {
-  width: 100%; /* Make the image fill the container */
-  height: 520px; /* Maintain aspect ratio */
+  width: 100%;
+  height: 520px;
   object-fit: cover;
 }
- 
-/* Second div - Image section */
+
 .hero-wrapper > .hero > div > div:nth-child(2) {
-  width: 25%; /* Takes up the other 50% of the container */
+  width: 25%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
 }
- 
-/* Ensure the image inside the picture tag scales properly */
+
 .hero-wrapper > .hero > div:nth-child(2) picture,
 .hero-wrapper > .hero > div:nth-child(2) img {
-  width: 100%; /* Make the image fill the container */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the container without distortion */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
- 
+
 .hero-wrapper > .hero > div > div:nth-child(3) {
   padding-left: 35px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.hero-wrapper > .hero > div > div:nth-child(3) img {
-    display: block;
-    height: 60px;
-    width: 60px;
-    position: absolute;
-    left: 0;
-    max-width: 3.375em;
-    color: transparent;
-    padding-left: 750px;
-}
-
-.hero-wrapper > .hero > div > div:nth-child(3) a{
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding-left: 5.0625em;
-    font-weight: 400;
-    text-decoration: none;
-    position: relative;
-}
-.hero-wrapper > .hero > div > div:nth-child(3) strong{
-    color: #003359;
-}
- 
 .hero-wrapper > .hero > div > div:nth-child(3) li {
   list-style: none;
   border-bottom: 1.5px solid #e2e2e2;
   padding: 8px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hero-wrapper > .hero > div > div:nth-child(3) li a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #003359;
+  display: block;
+  width: 100%;
+}
+
+.hero-wrapper > .hero > div > div:nth-child(3) li::after {
+  content: ">";
+  font-size: 24px;
+  color: #003359;
+  margin-left: 10px;
+}
+
+/* Styling for the list image */
+.hero-wrapper > .hero > div > div:nth-child(3) img {
+  display: block;
+  height: 60px;
+  width: 60px;
+  max-width: 3.375em;
+  margin-right: 10px;
+}
+
+.hero-wrapper > .hero > div > div:nth-child(3) a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-wrapper > .hero > div > div:nth-child(3) strong {
+  color: #003359;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .hero-wrapper > .hero > div {
+    flex-direction: column;
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(1),
+  .hero-wrapper > .hero > div > div:nth-child(2) {
+    width: 100%;
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(1) {
+    padding-left: 20px;
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(1)::before {
+    display: none;
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(3) {
+    padding-left: 20px;
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(3) img {
+    margin-left: 0;
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(3) a {
+    padding-left: 0;
+  }
 }
