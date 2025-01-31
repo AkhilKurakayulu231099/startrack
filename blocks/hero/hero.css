@@ -49,12 +49,9 @@
   object-fit: cover; /* Cover the container without distortion */
 }
 
-/* Empty third div - It should take up no space */
-.hero-wrapper > .hero > div:nth-child(3) > ul:nth-child(1) > li {
-  color: green; /* Ensures the third block is hidden */
-}
 
-.hero-wrapper > .hero > div:nth-child(1) li {
+
+.hero-wrapper > .hero > div > div > div > div:nth-child(3) li {
   color: green;
   text-decoration: none;
 }
