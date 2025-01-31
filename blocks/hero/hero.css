@@ -91,3 +91,57 @@
   border-bottom: 1.5px solid #e2e2e2;
   padding: 8px 0px 30px;
 }
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+
+  /* Change flex direction to column */
+  .hero-wrapper > .hero > div {
+    flex-direction: column; /* Stack the sections vertically */
+    height: auto;
+  }
+
+  /* Adjust the first div (Text section) */
+  .hero-wrapper > .hero > div > div:nth-child(1) {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(1) h1 {
+    font-size: 1.5em;
+    line-height: 1.4;
+  }
+
+  /* Adjust image in second div */
+  .hero-wrapper > .hero > div > div:nth-child(2) img {
+    height: auto; /* Let the image adjust based on screen size */
+    max-height: 300px; /* Set a max height for images on mobile */
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(2) {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust list item and image in third div */
+  .hero-wrapper > .hero > div > div:nth-child(3) {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(3) img {
+    display: none; /* Hide the image inside li on mobile */
+  }
+
+  /* Adjust the link and items in the third div */
+  .hero-wrapper > .hero > div > div:nth-child(3) a {
+    padding-left: 2.0625em; /* Adjust padding for mobile */
+    font-size: 1.2em;
+  }
+
+  .hero-wrapper > .hero > div > div:nth-child(3) li {
+    padding: 10px 0px 20px;
+    font-size: 1em;
+  }
+}
