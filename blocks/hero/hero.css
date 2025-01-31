@@ -84,6 +84,13 @@
     text-decoration: none;
     position: relative;
 }
+
+.hero-wrapper > .hero > div > div:nth-child(3) h2{
+    font-size: 24px;
+    font-family: APTypeProDisplay, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-weight: 500;
+    color: #003359;
+}
  
 .hero-wrapper > .hero > div > div:nth-child(3) li {
   list-style: none;
