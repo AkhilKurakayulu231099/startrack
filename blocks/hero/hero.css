@@ -84,6 +84,9 @@
     text-decoration: none;
     position: relative;
 }
+.hero-wrapper > .hero > div > div:nth-child(3) strong{
+    color: #003359;
+}
  
 .hero-wrapper > .hero > div > div:nth-child(3) li {
   list-style: none;
