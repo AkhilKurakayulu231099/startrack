@@ -1,6 +1,5 @@
 .block.hometext {
-    /*margin: auto;*/
-    background-color: #f5f5f5;
+    margin: auto;
 }
 .block.hometext h2{
     text-align: center;
