@@ -93,10 +93,3 @@
   border-bottom: 1.5px solid #e2e2e2;
   padding: 8px 0px 30px;
 }
-
-/* Mobile view: Hide image inside li */
-@media (max-width: 767px) {
-  .hero-wrapper > .hero > div > div:nth-child(3) img {
-    display: none;
-  }
-}
