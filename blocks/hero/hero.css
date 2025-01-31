@@ -26,11 +26,11 @@
 .hero-wrapper > .hero > div > div:nth-child(1)::before {
   content: ""; /* Empty content */
   position: absolute;
-  left: 0; /* Align to the left */
-  top: 65px; /* Start at the top of the container */
-  width: 10px; /* Set the width of the red line */
-  height: auto; /* Adjust height based on content */
-  min-height: 200px; /* Make sure the line spans at least the height of the heading and paragraph */
+  left: 20px;
+  top: 35px;
+  width: 10px;
+  height: auto;
+  min-height: 350px; /* Make sure the line spans at least the height of the heading and paragraph */
   border-left: 3px solid #dc1928; /* Red line */
 }
 
