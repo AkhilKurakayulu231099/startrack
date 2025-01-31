@@ -64,6 +64,9 @@
   list-style: none;
   display: inline-flex;
 }
+.hero-wrapper > .hero > div > div:nth-child(3) strong{
+  width: 100%;
+}
  
 .hero-wrapper > .hero > div > div:nth-child(3) li {
   list-style: none;
