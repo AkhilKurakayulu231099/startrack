@@ -120,6 +120,13 @@
     height: auto;
   }
 
+  /* Adjust the red line */
+  .freighthero-wrapper > .freighthero > div > div:nth-child(1)::before {
+    left: 20px; /* Move the line closer for mobile view */
+    top: 60px; /* Adjust the top position */
+    min-height: 60px; /* Increase the minimum height */
+  }
+
   /* Reduce padding for smaller screens in the third div */
   .freighthero-wrapper > .freighthero > div > div:nth-child(3) {
     padding-left: 0;
@@ -170,5 +177,12 @@
   .freighthero-wrapper > .freighthero > div > div:nth-child(3) a {
     padding-left: 2.0625em; /* Reduce padding */
     font-size: 12px; /* Smaller font size */
+  }
+
+  /* Adjust the red line for small screens */
+  .freighthero-wrapper > .freighthero > div > div:nth-child(1)::before {
+    left: 15px; /* Move the line closer for smaller screens */
+    top: 50px; /* Adjust the top position */
+    min-height: 80px; /* Increase the minimum height to span more text */
   }
 }
