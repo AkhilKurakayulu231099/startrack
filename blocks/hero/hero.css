@@ -58,9 +58,11 @@
   object-fit: cover; /* Cover the container without distortion */
 }
 
-
-
 .hero-wrapper > .hero > div > div:nth-child(3) {
   padding-left: 35px;
   text-decoration: none;
+}
+
+.hero-wrapper > .hero > div > div:nth-child(3) > p:nth-child(2){
+  border-bottom: 3px solid #dc1928;
 }
