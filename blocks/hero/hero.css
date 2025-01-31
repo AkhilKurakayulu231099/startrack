@@ -11,6 +11,8 @@
   box-sizing: border-box;
   position: relative; /* Allow absolute positioning of the red line */
   background-color: #f5f5f5
+  padding-left: 24px;
+        padding-right: 3.5%;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(1) h1 {
