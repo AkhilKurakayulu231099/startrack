@@ -12,6 +12,13 @@
   position: relative; /* Allow absolute positioning of the red line */
 }
 
+.hero-wrapper > .hero > div > div:nth-child(1) h1 {
+    color: rgb(0, 51, 89);
+    padding-right: 24px;
+    padding-bottom: 16px;
+    margin: 0px 0px 8px;
+}
+
 /* Red vertical line before the text (heading and paragraph) */
 .hero-wrapper > .hero > div > div:nth-child(1)::before {
   content: ""; /* Empty content */
