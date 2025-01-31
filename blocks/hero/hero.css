@@ -68,10 +68,11 @@
 .hero-wrapper > .hero > div > div:nth-child(3) li {
   list-style: none;
   border-bottom: 1px solid #e2e2e2;
+  display: flex;
 }
 .hero-wrapper > .hero > div > div:nth-child(3) a {
   list-style: none;
-  display: flex;
+  
 }
  
 .hero-wrapper > .hero > div > div:nth-child(3) p {
