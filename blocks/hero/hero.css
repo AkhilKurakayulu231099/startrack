@@ -51,7 +51,7 @@
 
 
 
-.hero-wrapper > .hero > div > div > div > div:nth-child(3) li {
+.hero-wrapper > .hero > div > div > div:nth-child(3) li {
   color: green;
   text-decoration: none;
 }
