@@ -60,7 +60,7 @@
 
 .hero-wrapper > .hero > div > div:nth-child(3) {
   padding-left: 35px;
-  text-decoration: none !important;
+  ist-style: none;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) p {
