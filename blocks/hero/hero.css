@@ -110,40 +110,25 @@
   list-style: none;
   border-bottom: 1.5px solid #e2e2e2;
   padding: 8px 0px 30px;
-  display: flex;
-  align-items: center; /* Align text and arrow horizontally */
 }
-
-/* Ensure the text and the arrow are in line and clickable */
-.hero-wrapper > .hero > div > div:nth-child(3) li a {
-  display: flex;
-  align-items: center;
-  text-decoration: none; /* Remove underline */
-  color: #003359;
-  font-size: 1.2em;
-  width: 100%;
-}
-
-/* Arrow styling and clickability */
 .hero-wrapper > .hero > div > div:nth-child(3) li::after {
-  content: "";
-  display: inline-block;
-  width: 24px;  /* Adjust the size of the icon */
-  height: 24px; /* Adjust the size of the icon */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.44 10.566l-.679-.714c-.011-.013-.028-.017-.044-.03L8.951.591a1.848 1.848 0 00-2.711 0l-.68.712a2.096 2.096 0 000 2.854l7.45 7.843-7.45 7.84a2.098 2.098 0 000 2.857l.68.71c.747.79 1.961.79 2.71 0l8.767-9.227c.014-.014.033-.018.044-.033l.68-.712c.375-.396.56-.916.559-1.435a2.065 2.065 0 00-.56-1.435z"></path></svg>') no-repeat center center;
-  background-size: contain; /* Ensure the SVG scales properly */
-  margin-left: 8px; /* Space between text and the arrow */
-  vertical-align: middle;
-  cursor: pointer; /* Make sure it’s clickable */
+      content: "";
+      display: inline-block; /* Makes the pseudo-element behave like an inline element */
+      width: 24px;  /* Adjust the size of the icon */
+      height: 24px; /* Adjust the size of the icon */
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.44 10.566l-.679-.714c-.011-.013-.028-.017-.044-.03L8.951.591a1.848 1.848 0 00-2.711 0l-.68.712a2.096 2.096 0 000 2.854l7.45 7.843-7.45 7.84a2.098 2.098 0 000 2.857l.68.71c.747.79 1.961.79 2.71 0l8.767-9.227c.014-.014.033-.018.044-.033l.68-.712c.375-.396.56-.916.559-1.435a2.065 2.065 0 00-.56-1.435z"></path></svg>') no-repeat center center;
+      background-size: contain; /* Ensure the SVG scales */
+      margin-left: 8px; /* Add some space between the text and the icon */
 }
-
-/* Add hover effect for links */
-.hero-wrapper > .hero > div > div:nth-child(3) li a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
 /* Mobile view adjustments */
 @media (max-width: 767px) {
+
+  /* Change flex direction to column */
+  .hero-wrapper > .hero > div {
+    flex-direction: column; /* Stack the sections vertically */
+    height: auto;
+  }
+
   /* Adjust the first div (Text section) */
   .hero-wrapper > .hero > div > div:nth-child(1) {
     width: 100%;
@@ -187,10 +172,28 @@
     padding: 10px 0px 20px;
     font-size: 1em;
   }
-
   .hero-wrapper > .hero > div > div:nth-child(3) li::after {
       content: "";
-      display: inline-block;
+      display: inline-block; /* Makes the pseudo-element behave like an inline element */
       width: 24px;  /* Adjust the size of the icon */
       height: 24px; /* Adjust the size of the icon */
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.44 10.566l-.679-.714c-.011-.013-.028-.017-.044-.03L8.951.591a1.848 1.848 0 00-2.711 0l-.68.712a2.096 2.096 0 000 2.854l7.45 7.843-7.45 7.84a2.098 2.098 0 000 2.857l.68.71c.747.79 1
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.44 10.566l-.679-.714c-.011-.013-.028-.017-.044-.03L8.951.591a1.848 1.848 0 00-2.711 0l-.68.712a2.096 2.096 0 000 2.854l7.45 7.843-7.45 7.84a2.098 2.098 0 000 2.857l.68.71c.747.79 1.961.79 2.71 0l8.767-9.227c.014-.014.033-.018.044-.033l.68-.712c.375-.396.56-.916.559-1.435a2.065 2.065 0 00-.56-1.435z"></path></svg>') no-repeat center center;
+      background-size: contain; /* Ensure the SVG scales */
+      margin-left: 8px; /* Add some space between the text and the icon */
+}
+/* Apply to each <li> element */
+.hero-wrapper .hero.block ul li::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #000; /* Change the color here */
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+
+
+}
