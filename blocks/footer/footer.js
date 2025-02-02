@@ -120,9 +120,9 @@ footanchor.innerHTML = `<a class="gf-social-links-icon" href="https://www.linked
                 </span>
             </a>`;
   var lastfooot = document.querySelector('div');
-  lastfooot.setAttribute('class','atsifooter');
+  lastfooot.setAttribute('class','atsifooter-1');
   lastfooot.setAttribute('data-block-name','tester');
- footDivone.appendChild(lastfooot);
+ footDiv.appendChild(lastfooot);
   lastfooot.innerHTML = `<div class="atsifooter">
   <div class="atsifooter__container">
          <img class="atsifooter__img" src="https://startrack.com.au/content/dam/global/svg-icons/custom/logos/ap-acknowledgement-logos.svg" alt="" aria-hidden="true" tabindex="-1">
