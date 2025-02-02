@@ -120,20 +120,25 @@ footanchor.innerHTML = `<a class="gf-social-links-icon" href="https://www.linked
                 </span>
             </a>`;
   var lastfooot = document.querySelector('div');
-  lastfooot.setAttribute('class','atsifooter-1');
+  lastfooot.setAttribute('class','atsifooter');
   lastfooot.setAttribute('data-block-name','tester');
  footDiv.appendChild(lastfooot);
-  lastfooot.innerHTML = `<div class="atsifooter">
-  <div class="atsifooter__container">
-         <img class="atsifooter__img" src="https://startrack.com.au/content/dam/global/svg-icons/custom/logos/ap-acknowledgement-logos.svg" alt="" aria-hidden="true" tabindex="-1">
-     <div class="atsifooter__msg font-caption">
-       <div class="rte-wrapper cmp-text">
-  <p>Australia Post acknowledges the Traditional Custodians of the land on which we operate, live and gather as &ZeroWidthSpace;a team. We recognise their continuing connection &ZeroWidthSpace;to land, water and community. We pay respect to Elders &ZeroWidthSpace;past, present and emerging.<br>
-</p>
-</div>
-</div>
-  </div>
-</div>`;
-
- 
+  var lastfoootOne = document.querySelector('div');
+  lastfoootOne.setAttribute('class','atsifooter');
+  lastfooot.appendChild(lastfoootOne);
+    var lastfooootOne = document.querySelector('div');
+  lastfooootOne.setAttribute('class','atsifooter__container');
+  lastfoootOne.appendChild(lastfooootOne);
+    var lastfootOnee = document.querySelector('img');
+  lastfootOnee.setAttribute('class','atsifooter__img');
+  lastfootOnee.setAttribute('src','https://startrack.com.au/content/dam/global/svg-icons/custom/logos/ap-acknowledgement-logos.svg');
+  lastfootOnee.setAttribute('alt','');
+  lastfootOnee.setAttribute('aria-hidden','true');
+  lastfootOnee.setAttribute('tabindex','-1');
+  lastfooootOne.appendChild(lastfootOnee);
+    var lastfoottOne = document.querySelector('div');
+  lastfoottOne.setAttribute('class','rte-wrapper');
+  lastfoottOne.classList.add('cmp-text');
+  lastfootOnee.appendChild(lastfoottOne);
+  lastfoottOne.innerHTML = `<p>Australia Post acknowledges the Traditional Custodians of the land on which we operate, live and gather as &ZeroWidthSpace;a team. We recognise their continuing connection &ZeroWidthSpace;to land, water and community. We pay respect to Elders &ZeroWidthSpace;past, present and emerging.<br></p>`;
 }
