@@ -17,11 +17,11 @@ footer > div > div:nth-child(1) > div > div > div > div > div > ul > li{
 }
 footer > div > div:nth-child(1) > div > div > div > div > div{
   background-color: #31313d;
-  padding: 15px;
+  padding: 15px 60px 15px;
 }
 footer > div > div:nth-child(1) > div > div > div > div > div p {
     color: white;
-	font-size: 12px;
+	font-size: 13px;
     font-weight: 400;
     /* align-items: center; */
     /* justify-content: space-between; */
