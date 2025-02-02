@@ -119,7 +119,7 @@ footanchor.innerHTML = `<a class="gf-social-links-icon" href="https://www.linked
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.2 5.6a1.6 1.6 0 11-3.201-.001A1.6 1.6 0 017.2 5.6zM20 13.914c0-2.988-.483-5.296-3.973-5.296C13.5 8.618 12 9.845 12 10.5V8.8H8.8V20H12v-5.49c0-1.446.744-2.85 2.538-2.85 1.766 0 2.262 1.657 2.262 2.943V20H20v-6.086zM4 20h3.2V8.8H4V20z"></path></svg>
                 </span>
             </a>`;
-  var lastfoopt = document.querySelector('div');
+  var lastfooot = document.querySelector('div');
   lastfooot.setAttribute('class','atsifooter');
   lastfooot.setAttribute('data-block-name','tester');
  mainFooter.appendChild(lastfooot);
