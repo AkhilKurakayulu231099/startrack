@@ -110,7 +110,7 @@ footDivone.appendChild(footLinksDiv);
 footDivone.appendChild(footcpyrightDiv);
  footcpyrightDiv.innerHTML = document.querySelector('.dx-copyright > div > div > p').textContent;
 
-// document.querySelector('.dx-copyright > div > div > p').style.display = 'none';
+document.querySelector('.dx-copyright > div > div > p').style.display = 'none';
   var footanchor = document.createElement('div');
   footanchor.setAttribute('class','social');
   footDivone.appendChild(footanchor);
