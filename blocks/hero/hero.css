@@ -60,6 +60,7 @@
 .hero-wrapper > .hero > div > div:nth-child(3) {
   padding-left: 35px;
   list-style: none;
+  width: 50%;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) img {
