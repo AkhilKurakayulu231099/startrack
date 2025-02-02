@@ -90,6 +90,11 @@
     color: #003359;
     font-weight: 500;
     font-size: 24px;
+    font-family: APTypeProText, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+.hero-wrapper > .hero > div > div:nth-child(3) > ul > li > a:nth-child(5){
+    color: #4D4D54;
+    font-family: APTypeProText, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) li {
