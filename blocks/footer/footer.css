@@ -6,11 +6,13 @@ footer > div > div:nth-child(1) > div > div > div > div > div > ul > li{
   background-color: black;
 }
 footer > div > div:nth-child(1) > div > div > div > div > div{
-  background-color: black;
+  background-color: #31313d;
   padding: 15px;
 }
 footer > div > div:nth-child(1) > div > div > div > div > div p {
-    color: green;
+    color: white;
+	font-size: 12px;
+    font-weight: 400;
     /* align-items: center; */
     /* justify-content: space-between; */
     width: 100%;
@@ -18,6 +20,7 @@ footer > div > div:nth-child(1) > div > div > div > div > div p {
     font-weight: 400;
     text-decoration: none;
     position: relative;
+	font-family: APTypeProText, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 footer > div > div:nth-child(1) > div > div > div > div > div > ul > li img{
