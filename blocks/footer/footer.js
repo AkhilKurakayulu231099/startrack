@@ -119,26 +119,27 @@ footanchor.innerHTML = `<a class="gf-social-links-icon" href="https://www.linked
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.2 5.6a1.6 1.6 0 11-3.201-.001A1.6 1.6 0 017.2 5.6zM20 13.914c0-2.988-.483-5.296-3.973-5.296C13.5 8.618 12 9.845 12 10.5V8.8H8.8V20H12v-5.49c0-1.446.744-2.85 2.538-2.85 1.766 0 2.262 1.657 2.262 2.943V20H20v-6.086zM4 20h3.2V8.8H4V20z"></path></svg>
                 </span>
             </a>`;
-  var lastfooot = document.querySelector('div');
-  lastfooot.setAttribute('class','atsifooter');
-  lastfooot.setAttribute('data-block-name','tester');
- footDiv.appendChild(lastfooot);
-  var lastfoootOne = document.querySelector('div');
-  lastfoootOne.setAttribute('class','atsifooter');
-  lastfooot.appendChild(lastfoootOne);
-    var lastfooootOne = document.querySelector('div');
-  lastfooootOne.setAttribute('class','atsifooter__container');
-  lastfoootOne.appendChild(lastfooootOne);
-    var lastfootOnee = document.querySelector('img');
-  lastfootOnee.setAttribute('class','atsifooter__img');
-  lastfootOnee.setAttribute('src','https://startrack.com.au/content/dam/global/svg-icons/custom/logos/ap-acknowledgement-logos.svg');
-  lastfootOnee.setAttribute('alt','');
-  lastfootOnee.setAttribute('aria-hidden','true');
-  lastfootOnee.setAttribute('tabindex','-1');
-  lastfooootOne.appendChild(lastfootOnee);
-    var lastfoottOne = document.querySelector('div');
-  lastfoottOne.setAttribute('class','rte-wrapper');
-  lastfoottOne.classList.add('cmp-text');
-  lastfootOnee.appendChild(lastfoottOne);
-  lastfoottOne.innerHTML = `<p>Australia Post acknowledges the Traditional Custodians of the land on which we operate, live and gather as &ZeroWidthSpace;a team. We recognise their continuing connection &ZeroWidthSpace;to land, water and community. We pay respect to Elders &ZeroWidthSpace;past, present and emerging.<br></p>`;
+ //  var lastfooot = document.querySelector('div');
+ //  lastfooot.setAttribute('class','atsifooter');
+ //  lastfooot.setAttribute('data-block-name','tester');
+ // footDiv.appendChild(lastfooot);
+ //  var lastfoootOne = document.querySelector('div');
+ //  lastfoootOne.setAttribute('class','atsifooter');
+ //  lastfooot.appendChild(lastfoootOne);
+ //    var lastfooootOne = document.querySelector('div');
+ //  lastfooootOne.setAttribute('class','atsifooter__container');
+ //  lastfoootOne.appendChild(lastfooootOne);
+ //    var lastfootOnee = document.querySelector('img');
+ //  lastfootOnee.setAttribute('class','atsifooter__img');
+ //  lastfootOnee.setAttribute('src','https://startrack.com.au/content/dam/global/svg-icons/custom/logos/ap-acknowledgement-logos.svg');
+ //  lastfootOnee.setAttribute('alt','');
+ //  lastfootOnee.setAttribute('aria-hidden','true');
+ //  lastfootOnee.setAttribute('tabindex','-1');
+ //  lastfooootOne.appendChild(lastfootOnee);
+ //    var lastfoottOne = document.querySelector('div');
+ //  lastfoottOne.setAttribute('class','rte-wrapper');
+ //  lastfoottOne.classList.add('cmp-text');
+ //  lastfootOnee.appendChild(lastfoottOne);
+ //  lastfoottOne.innerHTML = `<p>Australia Post acknowledges the Traditional Custodians of the land on which we operate, live and gather as &ZeroWidthSpace;a team. We recognise their continuing connection &ZeroWidthSpace;to land, water and community. We pay respect to Elders &ZeroWidthSpace;past, present and emerging.<br></p>`;
+  
 }
