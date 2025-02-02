@@ -5,6 +5,11 @@ footer {
 footer > div > div:nth-child(1) > div > div > div > div > div > ul > li{
   background-color: black;
 }
+footer > div > div:nth-child(1) > div > div > div > div > div > ul > li img{
+  height: 60px;
+  width: 80px;
+  position: absolute;
+}
 
 footer .footer > div {
   margin: auto;
