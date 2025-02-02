@@ -121,6 +121,7 @@ footanchor.innerHTML = `<a class="gf-social-links-icon" href="https://www.linked
             </a>`;
   var lastfoot = document.querySelector('div');
   lastfoot.setAttribute('class','atsifooter');
+  lastfoot.setAttribute('data-block-name','tester');
  mainFooter .appendChild(lastfoot);
   lastfoot.innerHTML = `<div class="atsifooter">
   <div class="atsifooter__container">
