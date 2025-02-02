@@ -2,6 +2,9 @@ footer {
   background-color: var(--light-color);
   font-size: var(--body-font-size-xs);
 }
+footer > div > div:nth-child(1) > div > div > div > div > div > ul > li{
+  background-color: black;
+}
 
 footer .footer > div {
   margin: auto;
