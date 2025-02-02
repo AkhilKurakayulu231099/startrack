@@ -31,17 +31,18 @@
     font-weight: 400;
     letter-spacing: normal;
     line-height: 26px;
+    padding-right: 10%;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(1)::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 35px;
-  width: 10px;
-  height: auto;
-  min-height: 230px;
-  border-left: 3px solid #dc1928;
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 10px;
+    height: auto;
+    min-height: 315px;
+    border-left: 3px solid #dc1928;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(2) img {
