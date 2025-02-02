@@ -23,6 +23,14 @@
   margin: 0px 0px 8px;
   font-family: APTypeProDisplay, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   line-height: 50px;
+  font-size: 42px;
+}
+
+.hero-wrapper > .hero > div > div:nth-child(1) > p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 26px;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(1)::before {
