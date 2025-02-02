@@ -8,6 +8,10 @@ footer > div > div:nth-child(1) > div > div > div > div > div > ul > li{
 footer > div > div:nth-child(1) > div > div > div > div > div{
   background-color: black;
 }
+footer > div > div:nth-child(1) > div > div > div > div > div p {
+	color: green;	
+}
+
 footer > div > div:nth-child(1) > div > div > div > div > div > ul > li img{
   height: 60px;
   width: 80px;
