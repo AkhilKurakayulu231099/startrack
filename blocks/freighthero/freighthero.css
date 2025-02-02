@@ -22,14 +22,14 @@
 }
 
 .freighthero-wrapper > .freighthero > div > div:nth-child(1)::before {
-  content: "";
-  position: absolute;
-  left: 25px;
-  top: 90px;
-  width: 10px;
-  height: auto;
-  min-height: 40px;
-  border-left: 3px solid #dc1928;
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 89px;
+    width: 10px;
+    height: auto;
+    min-height: 27.5px;
+    border-left: 3px solid #dc1928;
 }
 
 .freighthero-wrapper > .freighthero > div > div:nth-child(2) img {
