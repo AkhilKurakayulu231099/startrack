@@ -4731,7 +4731,7 @@ footer {
         margin: 0 auto;
     }
     footer .outline-footer {
-        padding: 70px 0px 40px 0px;
+        /*padding: 70px 0px 40px 0px;*/
         border-top: solid 1px #E2E2E2;
     }
 }
