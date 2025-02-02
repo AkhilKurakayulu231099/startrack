@@ -89,6 +89,7 @@
 .hero-wrapper > .hero > div > div:nth-child(3) > ul > li > a:nth-child(3){
     color: #003359;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) li {
