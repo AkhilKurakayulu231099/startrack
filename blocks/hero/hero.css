@@ -82,9 +82,13 @@
   position: relative;
 }
 
-.hero-wrapper > .hero > div > div:nth-child(3) a {
+/*.hero-wrapper > .hero > div > div:nth-child(3) a {
   color: #003359;
   font-weight: bold;
+}*/
+.hero-wrapper > .hero > div > div:nth-child(3) > ul > li > a:nth-child(3){
+    color: #003359;
+    font-weight: bold;
 }
 
 .hero-wrapper > .hero > div > div:nth-child(3) li {
